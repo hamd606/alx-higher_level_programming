@@ -3,7 +3,7 @@
 def print_last_digit(number):
 
     if number == 0:
-        print(f"0"; end="")
+        print(f"0", end="")
         return 0
 
     number = abs(number)
