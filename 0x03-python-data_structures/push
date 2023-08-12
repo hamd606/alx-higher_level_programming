@@ -1,0 +1,5 @@
+git add .
+git commit -m "auto commit"
+git pusgit add .
+git commit -m "auto commit"
+git push
