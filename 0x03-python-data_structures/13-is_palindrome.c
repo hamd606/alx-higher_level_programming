@@ -18,7 +18,7 @@ int is_palindrome(listint_t **head)
  * @last: ptr to the last node of the list
  * Return: 0 if not palindrome otherwise 1
  */
-int check_palndrome(listint_t **head, listint_t *last)
+int check_palindrome(listint_t **head, listint_t *last)
 {
 	if (last == NULL)
 		return (1);
