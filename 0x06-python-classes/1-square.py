@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
 class Square():
-    """empty class"""
-    _size = None
-    pass
+    """geometric square class"""
+    def __init__(self, size):
+        self.size = size
