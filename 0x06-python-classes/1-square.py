@@ -3,4 +3,5 @@
 class Square():
     """geometric square class"""
     def __init__(self, size):
+        """class init"""
         self.size = size
