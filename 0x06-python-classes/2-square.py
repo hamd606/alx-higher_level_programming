@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""This is a clas that representss a square """
+
+
 class Square():
     """square class"""
     def __init__(self, size=0):
