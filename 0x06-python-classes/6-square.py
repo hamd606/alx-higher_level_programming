@@ -4,9 +4,10 @@
 
 class Square():
     """square class"""
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """class init"""
         self.__size = size
+        self.__position = position
         if type(size) != int:
             raise TypeError("size must be an integer")
         if size < 0:
