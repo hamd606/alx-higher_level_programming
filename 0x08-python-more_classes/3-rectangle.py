@@ -46,6 +46,8 @@ class Rectangle():
 
     def __str__(self):
         graphical_rec = ""
+        if self.__height == 0 or self.__width == 0:
+            return graphical_rec
         for i in range(self.__height):
             for j in range(self.__width):
                 graphical_rec += "#"
