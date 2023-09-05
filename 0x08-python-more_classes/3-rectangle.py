@@ -52,4 +52,4 @@ class Rectangle():
             for j in range(self.__width):
                 graphical_rec += "#"
             graphical_rec += "\n"
-        return graphical_rec[:len(graphical_re) - 2]
+        return graphical_rec[:len(graphical_rec) - 1]
