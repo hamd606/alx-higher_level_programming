@@ -52,10 +52,12 @@ class Rectangle():
             for j in range(self.__width):
                 graphical_rec += "#"
             graphical_rec += "\n"
-        return graphical_rec
+        return graphical_rec[:len(graphical_rec) - 1]
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
-    
+        w = self.__width
+        h = self.__height
+        return "Rectangle(" + str(w) + ", " + str(h) + ")"
+
     def __del__(self):
         print("Bye rectangle...")
