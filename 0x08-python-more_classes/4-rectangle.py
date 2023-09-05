@@ -55,4 +55,6 @@ class Rectangle():
         return graphical_rec[:len(graphical_rec) - 1]
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
+        w = self.__width
+        h = self.__height
+        return "Rectangle(" + str(w) + ", " + str(h) + ")"
