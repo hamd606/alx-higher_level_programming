@@ -12,6 +12,7 @@ class Rectangle():
         """the init method"""
         self.__width = width
         self.__height = height
+        #self.print_symbol = self.__class__.print_symbol
         self.__class__.number_of_instances += 1
 
     @property
@@ -55,7 +56,7 @@ class Rectangle():
             return graphical_rec
         for i in range(self.__height):
             for j in range(self.__width):
-                graphical_rec += str(self.__class__.print_symbol)
+                graphical_rec += str(self.print_symbol)
             graphical_rec += "\n"
         return graphical_rec[:len(graphical_rec) - 1]
 
