@@ -12,7 +12,6 @@ class Rectangle():
         """the init method"""
         self.__width = width
         self.__height = height
-        #self.print_symbol = self.__class__.print_symbol
         self.__class__.number_of_instances += 1
 
     @property
