@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """this is a class inheritance f-rom list class"""
 
 
