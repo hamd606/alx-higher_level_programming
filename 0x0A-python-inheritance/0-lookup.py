@@ -4,4 +4,4 @@
 
 def lookup(obj):
     """his function prints obj attributes"""
-    print(dir(obj))
+    return dir(obj)
