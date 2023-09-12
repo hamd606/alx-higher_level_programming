@@ -4,7 +4,6 @@ I believe that the dowcs will just waste your time it"s very simple"""
 
 
 def read_file(filename=""):
-    """simple enough just look at the code"""
-    f = open(filename, 'r', encoding='UTF8')
-    print(f.read())
-    return f
+    """a function that reads a text file (UTF8) and prints it to stdout:"""
+    with open(filename, 'r', encoding='UTF8') as f:
+        print(f.read(), end="")
