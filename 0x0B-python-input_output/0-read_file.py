@@ -5,6 +5,6 @@ I believe that the dowcs will just waste your time it"s very simple"""
 
 def read_file(filename=""):
     """simple enough just look at the code"""
-    f = open(filename, 'r')
+    f = open(filename, 'r', encoding='UTF8')
     print(f.read())
     return f
