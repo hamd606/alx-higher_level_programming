@@ -3,7 +3,7 @@
 
 
 def is_same_class(obj, a_class):
-    """this function check if obj is an instannce of a a_class
+    """function: is_kind_of_class
     obj: an object
     a_class: a class
     Returns: Bool"""
