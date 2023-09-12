@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module has a funcction that check if a class is instance"""
+"""This module has a funcction that check if a class is instance of another"""
 
 
 def is_same_class(obj, a_class):
