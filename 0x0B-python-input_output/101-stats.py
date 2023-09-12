@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""prints stats from stdin according to task"""
+
+
 import sys
 import io
 
