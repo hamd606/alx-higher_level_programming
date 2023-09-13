@@ -2,7 +2,7 @@
 """This module has a funcction that check if a class is instance"""
 
 
-def is_same_class(obj, a_class):
+def inherits_from(obj, a_class):
     """his function check if obj is an istannce of a a_class"""
     if type(obj) is a_class:
         return Fasle
