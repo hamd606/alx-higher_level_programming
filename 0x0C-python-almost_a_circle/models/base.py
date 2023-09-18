@@ -18,4 +18,4 @@ class Base():
 
     @classmethod
     def current_nb_obj(cls):
-        return cls.__nb_objects
+        return int(cls.__nb_objects)
