@@ -31,71 +31,83 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """height getter"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """height setter"""
         self.validate_int("height", value, possible_zero=False)
         self.__height = value
 
     @property
     def x(self):
+        """x getter"""
         return self.__x
 
     @x.setter
     def x(self, value):
+        """x setter"""
         self.validate_int("x", value)
         self.__x = value
 
     @property
     def y(self):
+        """y getter"""
         return self.__y
 
     @y.setter
     def y(self, value):
+        """y getter"""
         self.validate_int("y", value)
         self.__x = value
         self.__y = value
 
     @staticmethod
     def validate_int(var, value, possible_zero=True):
+        """int validator"""
         if type(value) != int:
             raise TypeError(var + " must be an integer")
         if possible_zero and value < 0:
             raise ValueError(var + " must be >= 0")
         if not possible_zero and value < 1:
             raise ValueError(var + " must be > 0")
-        
+
         return value
-    
+
     def area(self):
+        """area getter"""
         return self.__width * self.__height
-    
+
     def display(self):
+        """displays a rectangle"""
         print("\n"*self.__y, end="")
         for i in range(self.__height):
             print(" "*self.__x, end="")
             for j in range(self.__width):
                 print("#", end="")
-            
+
             print()
 
     def __str__(self):
+        """str formatting"""
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
-    
+
     def update_helper(self, id=None, width=None, height=None, x=None, y=None):
-        if id != None:
+        """updates attrib (helper func for update func"""
+        if id is not None:
             self.id = id
-        if width != None:
+        if width is not None:
             self.__width = width
-        if height != None:
+        if height is not None:
             self.__height = height
-        if x != None:
+        if x is not None:
             self.__x = x
-        if y != None:
+        if y is not None:
             self.__y = y
 
     def update(self, *args, **kwargs):
+        """updates attrib"""
         if args:
             self.update_helper(*args)
         if kwargs:
