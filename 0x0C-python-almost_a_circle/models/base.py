@@ -2,6 +2,7 @@
 """This module has the base class
 that all other classes inherits f-rom"""
 from json import dumps, loads
+import csv
 
 
 class Base():
@@ -57,3 +58,13 @@ class Base():
             new = None
         new_obj.update(**dictionary)
         return new_obj
+
+    @classmethod
+    def load_from_file(cls):
+        """loads from file"""
+        from os import path
+        file = "{}.json".format(cls.__name__)
+        if not path.isfile(file):
+            return []
+        with open(file, "r", encoding="utf-8") as f:
+            return [cls.create(**d) for d in cls.from_json_string(f.read())]
