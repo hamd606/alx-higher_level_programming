@@ -2,6 +2,7 @@
 """This module has the base class
 that all other classes inherits f-rom"""
 from json import dumps, loads
+import csv
 
 
 class Base():
