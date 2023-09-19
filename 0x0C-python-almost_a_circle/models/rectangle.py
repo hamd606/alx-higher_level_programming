@@ -91,8 +91,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """str formatting"""
-        return f"[Rectangle] ({self.id}) \
-                {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
     def update_helper(self, id=None, width=None, height=None, x=None, y=None):
         """updates attrib (helper func for update func"""
