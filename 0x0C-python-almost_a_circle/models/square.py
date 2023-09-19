@@ -10,7 +10,7 @@ class Square(Rectangle):
 
     def __str__(self):
         return f"[Square] ({self.id})  {self.x}/{self.y} - {self.height}"
-    
+
     @property
     def size(self):
         """size getter"""
@@ -23,7 +23,7 @@ class Square(Rectangle):
         self.validate_int("height", value, possible_zero=False)
         self.width = value
         self.height = value
-        
+
     def update_helper(self, id=None, size=None, x=None, y=None):
         '''updates method for args'''
         if id is not None:
