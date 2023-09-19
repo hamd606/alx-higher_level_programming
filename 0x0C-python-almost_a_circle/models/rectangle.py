@@ -115,5 +115,6 @@ class Rectangle(Base):
             self.update_helper(**kwargs)
 
     def to_dictionary(self):
+        """returns the dict representation of rectangle obj"""
         return {"id":self.id, "width":self.__width, "height":self.__height, \
-            "x":self.__x, "y":self.__y}
+            "x":self.__x, "y":self.__yi}
