@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """this is a module that prints the last and firdt name"""
 
+
 def say_my_name(first_name, last_name=""):
     """this function prints its valid input (names)"""
     if type(first_name) != str:
