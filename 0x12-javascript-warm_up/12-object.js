@@ -1,5 +1,5 @@
 #!/usr/bin/node
-//uses js object
+// uses js object
 
 const myObject = {
   type: 'object',
