@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-# Defines the State model
-# Inherits from SQLAlchemy Base and links to the MySQL table states
+"""# Defines the State model
+# Inherits from SQLAlchemy Base and links to the MySQL table states"""
 
 
 from sqlalchemy import Column, Integer, String

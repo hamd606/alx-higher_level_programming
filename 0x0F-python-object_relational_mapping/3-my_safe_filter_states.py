@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-# Displays all values in the states table of the database hbtn_0e_0_usa
+"""# Displays all values in the states table of the database hbtn_0e_0_usa
 # whith the name that  matches the supplied arg
 # Protected against SQL injections
 # Usage: ./3-my_safe_filter_states.py <mysql username> \
-#   <mysql password> <database name> <state name searched>
+#   <mysql password> <database name> <state name searched>"""
+
+
 import sys
 import MySQLdb
 

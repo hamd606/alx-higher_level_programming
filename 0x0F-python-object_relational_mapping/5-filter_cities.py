@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-# Displays all cities of a given state from the
+"""# Displays all cities of a given state from the
 # states table in the database hbtn_0e_4_usa
 # Protected against SQL injections
 # Usage: ./5-filter_cities.py <mysql username> \
-#   <mysql password> <database name> <state name searched>
+#   <mysql password> <database name> <state name searched>"""
+
+
 import sys
 import MySQLdb
 

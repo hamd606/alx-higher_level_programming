@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-# Lists the State object with the name passed as arg
+"""# Lists the State object with the name passed as arg
 # from the database hbtn_0e_6_usa
 # Usage: ./10-model_state_my_get.py <mysql username> /
-#   <mysql password> <database name> <state name searched>
+#   <mysql password> <database name> <state name searched>"""
+
+
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
