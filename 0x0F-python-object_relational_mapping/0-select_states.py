@@ -4,8 +4,6 @@
 #               <mysql password> <database name>
 import sys
 import MySQLdb
-"""Lists all states from the database hbtn_0e_0_usa"""
-
 
 if __name__ == "__main__":
     """Lists all states from the database hbtn_0e_0_usa"""
