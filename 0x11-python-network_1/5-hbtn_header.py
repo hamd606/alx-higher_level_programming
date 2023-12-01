@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Takes in a URL as arg and sends a request to the URL and 
+"""Takes in a URL as arg and sends a request to the URL and
 prints the value of the variable X-Request-Id in the response header"""
 
 
