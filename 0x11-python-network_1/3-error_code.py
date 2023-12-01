@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Takes in a URL as arg and sends a request to the URL 
+"""Takes in a URL as arg and sends a request to the URL
 prints the body of the response in utf-8"""
 
 
