@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Takes repository name and owner name as args then 
+"""Takes repository name and owner name as args then
 lists 10 commits"""
 
 
